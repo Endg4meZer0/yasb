@@ -65,6 +65,8 @@ class ActiveLayoutWidget(BaseWidget):
         self.callback_left = callbacks['on_left']
         self.callback_right = callbacks['on_right']
         self.callback_middle = callbacks['on_middle']
+        self.callback_forward = callbacks['on_forward']
+        self.callback_back = callbacks['on_back']
 
         self.register_callback("next_layout", self._next_layout)
         self.register_callback("prev_layout", self._prev_layout)

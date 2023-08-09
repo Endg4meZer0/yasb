@@ -116,6 +116,8 @@ bars:
         # on_left: "toggle_label" - toggles between the clock and alternate clock labels
         # on_middle: "do_nothing"
         # on_right: "next_timezone" - cycles the next timezone to be shown by the clock
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
   # memory-widget:
     # type: "yasb.memory.MemoryWidget"
@@ -144,6 +146,8 @@ bars:
         # on_left: "toggle_label"  - toggles between the clock and alternate clock labels
         # on_middle: "do_nothing"
         # on_right:" "do_nothing"
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
   # battery-widget:
     # type: "yasb.battery.BatteryWidget"
@@ -191,6 +195,8 @@ bars:
         # on_left: "toggle_label" - toggles between the clock and alternate clock labels
         # on_middle: "do_nothing"
         # on_right: "do_nothing"
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
   # cpu-widget:
     # type: "yasb.cpu.CpuWidget"
@@ -231,6 +237,8 @@ bars:
         # on_left: "toggle_label" - toggles between the cpu and alternate cpu labels
         # on_middle: "do_nothing"
         # on_right: "do_nothing"
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
   # active-window-widget:
     # type: "yasb.active_window.ActiveWindowWidget"
@@ -276,6 +284,8 @@ bars:
         # on_left: "toggle_label" - toggles between the clock and alternate clock labels
         # on_middle: "do_nothing"
         # on_right: "do_nothing"
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
   # komorebi_workspaces:
     # type: "komorebi.workspaces.WorkspacesWidget"
@@ -324,6 +334,8 @@ bars:
         # on_left: "next_layout"
         # on_middle: "toggle_monocle"
         # on_right: "prev_layout"
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
   # custom-weather-widget-example:
     # type: "yasb.clock.CustomWidget"
@@ -358,6 +370,8 @@ bars:
         # on_left: "toggle_label" - toggles between the clock and alternate clock labels
         # on_middle: "do_nothing"
         # on_right: "do_nothing"
+        # on_forward: "do_nothing"
+        # on_back: "do_nothing"
 
 widgets:
   active_window:
