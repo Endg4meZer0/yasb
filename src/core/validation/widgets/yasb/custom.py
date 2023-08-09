@@ -10,6 +10,8 @@ DEFAULTS = {
         'on_left': "toggle_label",
         'on_middle': "do_nothing",
         'on_right': "do_nothing",
+        'on_forward': 'do_nothing',
+        'on_back': 'do_nothing'
     }
 }
 
@@ -72,6 +74,14 @@ VALIDATION_SCHEMA = {
             'on_right': {
                 'type': 'string',
                 'default': DEFAULTS['callbacks']['on_right']
+            },
+            'on_forward': {
+                'type': 'string',
+                'default': DEFAULTS['callbacks']['on_forward']
+            },
+            'on_back': {
+                'type': 'string',
+                'default': DEFAULTS['callbacks']['on_back']
             }
         },
         'default': DEFAULTS['callbacks']

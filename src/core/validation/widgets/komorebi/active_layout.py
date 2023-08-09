@@ -16,7 +16,9 @@ DEFAULTS = {
     'callbacks': {
         'on_left': 'next_layout',
         'on_middle': 'toggle_monocle',
-        'on_right': 'prev_layout'
+        'on_right': 'prev_layout',
+        'on_forward': 'do_nothing',
+        'on_back': 'do_nothing'
     }
 }
 
@@ -103,6 +105,14 @@ VALIDATION_SCHEMA = {
                 'type': 'string',
                 'default': DEFAULTS['callbacks']['on_middle'],
                 'allowed': ALLOWED_CALLBACKS
+            },
+            'on_forward': {
+                'type': 'string',
+                'default': DEFAULTS['callbacks']['on_forward']
+            },
+            'on_back': {
+                'type': 'string',
+                'default': DEFAULTS['callbacks']['on_back']
             }
         },
         'default': DEFAULTS['callbacks']

@@ -70,12 +70,16 @@ class ActiveWindowWidget(BaseWidget):
             callbacks = {
                 "on_left": "toggle_label",
                 "on_middle": "do_nothing",
-                "on_right": "toggle_label"
+                "on_right": "toggle_label",
+                "on_forward": "do_nothing",
+                "on_back": "do_nothing"
             }
 
         self.callback_left = callbacks['on_left']
         self.callback_right = callbacks['on_right']
         self.callback_middle = callbacks['on_middle']
+        self.callback_forward = callbacks['on_forward']
+        self.callback_back = callbacks['on_back']
 
         self.foreground_change.connect(self._on_focus_change_event)
         self._event_service.register_event(WinEvent.EventSystemForeground, self.foreground_change)

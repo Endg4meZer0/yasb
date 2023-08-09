@@ -32,7 +32,9 @@ EXAMPLE_VALIDATION_SCHEMA = {
         'default': {
             'on_left': 'toggle_label',
             'on_middle': 'do_nothing',
-            'on_right': 'toggle_label'
+            'on_right': 'toggle_label',
+            'on_forward': 'do_nothing',
+            'on_back': 'do_nothing'
         }
     }
 }

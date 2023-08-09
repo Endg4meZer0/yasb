@@ -5,7 +5,9 @@ DEFAULTS = {
     'callbacks': {
         'on_left': "toggle_label",
         'on_middle': "do_nothing",
-        'on_right': "do_nothing"
+        'on_right': "do_nothing",
+        'on_forward': 'do_nothing',
+        'on_back': 'do_nothing'
     },
     'memory_thresholds': {
         'low': 25,
@@ -71,6 +73,14 @@ VALIDATION_SCHEMA = {
                 'type': 'string',
                 'nullable': True,
                 'default': DEFAULTS['callbacks']['on_right']
+            },
+            'on_forward': {
+                'type': 'string',
+                'default': DEFAULTS['callbacks']['on_forward']
+            },
+            'on_back': {
+                'type': 'string',
+                'default': DEFAULTS['callbacks']['on_back']
             }
         },
         'default': DEFAULTS['callbacks']

@@ -50,6 +50,8 @@ class BaseWidget(QWidget):
         self.callback_left: Union[str, list[str]] = self.callback_default
         self.callback_middle: Union[str, list[str]] = self.callback_default
         self.callback_right: Union[str, list[str]] = self.callback_default
+        self.callback_forward: Union[str, list[str]] = self.callback_default
+        self.callback_back: Union[str, list[str]] = self.callback_default
 
     def register_callback(self, callback_name, fn):
         self.callbacks[callback_name] = fn
@@ -67,6 +69,10 @@ class BaseWidget(QWidget):
             self._run_callback(self.callback_middle)
         elif event.button() == Qt.MouseButton.RightButton:
             self._run_callback(self.callback_right)
+        elif event.button() == Qt.MouseButton.ForwardButton or event.button() == Qt.MouseButton.XButton2 or event.button() == Qt.MouseButton.ExtraButton2:
+            self._run_callback(self.callback_forward)
+        elif event.button() == Qt.MouseButton.BackButton or event.button() == Qt.MouseButton.XButton1 or event.button() == Qt.MouseButton.ExtraButton1:
+            self._run_callback(self.callback_back)
 
     def _run_callback(self, callback_str: Union[str, list]):
         if " " in callback_str:
