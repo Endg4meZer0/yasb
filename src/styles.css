@@ -47,6 +47,14 @@
     color: #121212;
 }
 
+.separator-widget {
+	margin: 0px 0px 2px 0px;
+}
+
+.separator-widget .label {
+	font-size: 20px;
+}
+
 .custom-widget {
     padding: 2px 6px;
     font-size: 14px;
