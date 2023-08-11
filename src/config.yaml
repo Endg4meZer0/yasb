@@ -125,6 +125,7 @@ bars:
       # label: "\uf538  {virtual_mem_free}/{virtual_mem_total}"
         # ^ The format label for the widget. Accepts: string containing any of the below format options:
           # {virtual_mem_free}    : The amount of free virtual memory
+          # {virtual_mem_used}    : The amount of used virtual memory
           # {virtual_mem_percent} : The percentage of free virtual memory
           # {virtual_mem_total}   : The amount of total virtual memory
           # {virtual_mem_avail}   : The amount of total available virtual memory
@@ -420,7 +421,7 @@ widgets:
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-        label: "\uf538 {virtual_mem_free}"
+        label: "\uf538 {virtual_mem_used}"
         label_alt: "\uf538 {virtual_mem_percent}%"
         update_interval: 5000
         callbacks:
